@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ChatGPT Automation</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <h1>ChatGPT Automation</h1>
+    
+    <div class="form-group">
+      <label for="fixedPrompt">Fixed Prompt:</label>
+      <textarea id="fixedPrompt" placeholder="Enter fixed instructions that ChatGPT should follow..." rows="4"></textarea>
+    </div>
+
+    <div class="form-group">
+      <label for="story">Story/Script:</label>
+      <textarea id="story" placeholder="Enter your full story, script, or content to process..." rows="8"></textarea>
+    </div>
+
+    <div class="controls">
+      <button id="startBtn" class="btn btn-primary">START</button>
+      <button id="pauseBtn" class="btn btn-warning">PAUSE</button>
+      <button id="resumeBtn" class="btn btn-info">RESUME</button>
+      <button id="stopBtn" class="btn btn-danger">STOP</button>
+    </div>
+
+    <div class="status-section">
+      <div id="status" class="status">⚪ Idle</div>
+      <div id="progress" class="progress">Progress: 0/0</div>
+    </div>
+
+    <div class="info">
+      <p><strong>How it works:</strong></p>
+      <ul>
+        <li>1. Fill in Fixed Prompt and Story</li>
+        <li>2. Keep ChatGPT open in another tab</li>
+        <li>3. Click START</li>
+        <li>4. Extension will automatically send chunks</li>
+      </ul>
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
